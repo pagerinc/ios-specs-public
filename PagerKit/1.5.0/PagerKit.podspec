@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     s.platform          = :ios
     s.ios.deployment_target = '10.0'
     s.ios.vendored_frameworks = "PagerKit.framework"
-    s.source       = { :http => 'https://pagerinc.jfrog.io/pagerinc/cocoapods/PagerKit/1.5.0/PagerKit.zip'}
+    s.source       = { :http => 'https://pagerinc.jfrog.io/pagerinc/npm/%40pager/ios-pager-kit/-/%40pager/ios-pager-kit-1.5.0.tgz'}
     s.requires_arc      = true
     s.libraries = 'z'
 
