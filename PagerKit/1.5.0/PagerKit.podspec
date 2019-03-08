@@ -1,7 +1,3 @@
-#
-# Be sure to run `pod lib lint PagerKit.podspec' to ensure this is a
-# valid spec before submitting.
-#
 
 Pod::Spec.new do |s|
     s.name              = 'PagerKit'
@@ -19,6 +15,7 @@ Pod::Spec.new do |s|
     s.ios.vendored_frameworks = "PagerKit.framework"
     s.source       = { :http => 'https://pagerinc.jfrog.io/pagerinc/npm/%40pager/ios-pager-kit/-/%40pager/ios-pager-kit-1.5.0.tgz'}
     s.requires_arc      = true
-    s.libraries = 'z'
+    s.libraries = 'z' , 'c++'
+    s.ios.frameworks = 'Accelerate' , 'AVFoundation' , 'CoreVideo' , 'MobileCoreServices' , 'OpenGLES', 'QuartzCore' , 'UIKit', 'AudioToolbox' , 'VideoToolbox', 'AVFoundation', 'CoreTelephony', 'GLKit' , 'CoreMedia', 'SystemConfiguration' , 'Metal'
 
 end
